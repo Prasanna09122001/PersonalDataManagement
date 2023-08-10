@@ -80,8 +80,9 @@ namespace PersonalDataManagement
                 Age = 56
             });
             Operation operation = new Operation();
-          //  operation.RetreiveTopTwoRecors(persons);
-            operation.RetreiveRecordsInBetweenAge(persons);
+            //  operation.RetreiveTopTwoRecors(persons);
+            //  operation.RetreiveRecordsInBetweenAge(persons);
+            operation.AverageList(persons);
             
         }
     }
