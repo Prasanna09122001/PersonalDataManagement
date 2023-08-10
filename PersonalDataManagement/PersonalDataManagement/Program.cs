@@ -56,7 +56,7 @@ namespace PersonalDataManagement
                 SSN = 7,
                 Name = "g",
                 Address = "g",
-                Age = 17
+                Age = 63
             });
             persons.Add(new Person()
             {
@@ -83,7 +83,8 @@ namespace PersonalDataManagement
             //  operation.RetreiveTopTwoRecors(persons);
             //  operation.RetreiveRecordsInBetweenAge(persons);
             //operation.AverageList(persons);
-            operation.RetreivePersonDetailsByName(persons);
+            // operation.RetreivePersonDetailsByName(persons);
+            operation.RecordsOfAge(persons);
             
         }
     }

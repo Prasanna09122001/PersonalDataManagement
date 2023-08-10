@@ -30,6 +30,11 @@ namespace PersonalDataManagement
             var Result = list.Where(x => x.Name == name);
             Display(Result.ToList());
         }
+        public void RecordsOfAge(List<Person> list)
+        {
+            var result = list.SkipWhile(x => x.Age < 60);
+            Display(result.ToList());
+        }
         public void Display(List<Person> list)
         {
             foreach (var data in list)
