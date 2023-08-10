@@ -32,8 +32,16 @@ namespace PersonalDataManagement
         }
         public void RecordsOfAge(List<Person> list)
         {
-            var result = list.SkipWhile(x => x.Age < 60);
+            var result = list.OrderBy(x=>x.Age).Skip(list.Count(x=>x.Age<60));
             Display(result.ToList());
+        }
+        public void DeleeteDataFromList(List<Person> list)
+        {
+            Console.WriteLine("Enter the Name to Delete");
+            string name = Console.ReadLine();
+            var Result = list.Find(x => x.Name == name);
+            list.Remove(Result);
+            Display(list);
         }
         public void Display(List<Person> list)
         {

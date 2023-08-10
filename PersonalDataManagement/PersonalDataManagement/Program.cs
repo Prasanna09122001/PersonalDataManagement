@@ -80,12 +80,19 @@ namespace PersonalDataManagement
                 Age = 56
             });
             Operation operation = new Operation();
-            //  operation.RetreiveTopTwoRecors(persons);
-            //  operation.RetreiveRecordsInBetweenAge(persons);
-            //operation.AverageList(persons);
-            // operation.RetreivePersonDetailsByName(persons);
-            operation.RecordsOfAge(persons);
-            
+         /*   Console.WriteLine("Retreie the Top Two Records");
+            operation.RetreiveTopTwoRecors(persons);
+            Console.WriteLine("Retreive the Records Between Two Ages");
+            operation.RetreiveRecordsInBetweenAge(persons);
+            Console.WriteLine("Find the Average Age Of the List");
+            operation.AverageList(persons);
+            Console.WriteLine("Retreive the Person Details By Using The Name");
+            operation.RetreivePersonDetailsByName(persons);
+            Console.WriteLine("Skip the Data Upto Age of 60");
+            operation.RecordsOfAge(persons);*/
+            Console.WriteLine("Removing Of Data");
+            operation.DeleeteDataFromList(persons);
+
         }
     }
 }
