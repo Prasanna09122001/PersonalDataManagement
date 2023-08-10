@@ -23,6 +23,13 @@ namespace PersonalDataManagement
             var result = list.Average(x => x.Age);
             Console.WriteLine(result);
         }
+        public void RetreivePersonDetailsByName(List<Person> list)
+        {
+            Console.WriteLine("Enter the Name to Search");
+            string name = Console.ReadLine();
+            var Result = list.Where(x => x.Name == name);
+            Display(Result.ToList());
+        }
         public void Display(List<Person> list)
         {
             foreach (var data in list)

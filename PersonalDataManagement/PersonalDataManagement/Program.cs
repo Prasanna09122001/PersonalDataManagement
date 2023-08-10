@@ -82,7 +82,8 @@ namespace PersonalDataManagement
             Operation operation = new Operation();
             //  operation.RetreiveTopTwoRecors(persons);
             //  operation.RetreiveRecordsInBetweenAge(persons);
-            operation.AverageList(persons);
+            //operation.AverageList(persons);
+            operation.RetreivePersonDetailsByName(persons);
             
         }
     }
